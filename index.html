@@ -1,0 +1,773 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"/>
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <link rel="stylesheet" href="main.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/iconify/3.1.1/iconify.min.js"></script>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <title>"Your Site"</title>
+</head>
+<body>
+    <main>
+    <div class="bg-[#FF3D00]">
+              <!-----------NAVBAR--------->
+              <section id="hero">
+                <header class="container relative mx-auto flex flex-col overflow-hidden px-4 py-4 lg:flex-row lg:items-center" data-aos="zoom-in-down" data-aos-delay="900">
+                  <a href="#" class="flex items-center whitespace-nowrap text-2xl font-bold text-white"><h4>📜"Your Site"</h4></a>
+                  <input type="checkbox" class="peer hidden" id="navbar-open" />
+                  <label class="absolute top-5 right-5 cursor-pointer lg:hidden" for="navbar-open">
+                    <svg class="h-7 w-7" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                      <path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M4 6h16M4 12h16M4 18h16"></path>
+                    </svg>
+                  </label>
+                  <nav aria-label="Header Navigation" class="peer-checked:pt-8 peer-checked:max-h-80 flex max-h-0 w-full flex-col items-center overflow-hidden transition-all lg:ml-24 lg:max-h-full lg:flex-row">
+                    <ul class="flex w-full flex-col items-center space-y-2 lg:flex-row lg:justify-center lg:space-y-0 font-medium">
+                      <li class="lg:mr-12"> <a href="#home" class="inline-flex whitespace-nowrap border-b-2 border-transparent font-medium text-white transition-all duration-300 ease-in-out hover:border-b-[#4535FD]">Services</a>
+                      </li>
+          
+                      <li class="lg:mr-12"> <a href="#about" class="inline-flex whitespace-nowrap border-b-2 border-transparent font-medium text-white transition-all duration-300 ease-in-out hover:border-b-[#4535FD]">About Us</a>
+                      </li>
+          
+                      <li class="lg:mr-12"> <a href="#services" class="inline-flex whitespace-nowrap border-b-2 border-transparent font-medium text-white transition-all duration-300 ease-in-out hover:border-b-[#4535FD]">FAQs</a>
+                      </li>
+
+                      <li class="lg:mr-12"> <a href="#services" class="inline-flex whitespace-nowrap border-b-2 border-transparent font-medium text-white transition-all duration-300 ease-in-out hover:border-b-[#4535FD]">Connections</a>
+                      </li>
+                    </ul>
+                    <hr class="mt-4 w-full lg:hidden" />
+                    <div class="my-4 flex items-center space-x-6 space-y-2 lg:my-0 lg:ml-auto lg:space-x-8 lg:space-y-0">
+                      <a href="#" title="" class="whitespace-nowrap rounded font-medium transition-all duration-200 focus:outline-none focus:ring-1 focus:ring-blue-700 focus:ring-offset-2 text-white"> Log in </a>
+          
+                      <a href="#" title="" class="whitespace-nowrap rounded-md bg-[#4535FD] px-5 py-3 font-medium text-white transition-all duration-200 focus:outline-none focus:ring-2 focus:ring-blue-700 focus:ring-offset-2">Sign Up</a>
+                    </div>
+                  </nav>
+                </header>
+              </section>
+    
+            <!-------HERO-SECTION------->
+            <section class="text-white body-font">
+                <div class="container mx-auto flex px-5 py-24 md:flex-row flex-col items-center">
+                    <div
+                        class="lg:flex-grow md:w-1/2 lg:pr-24 md:pr-16 flex flex-col md:items-start md:text-left mb-16 md:mb-0 items-center text-center">
+                        <h1 class="title-font sm:text-4xl text-3xl mb-4 font-extrabold text-white" data-aos="fade-right" data-aos-delay="600">Welcome to "Your Site" Easy <br> <span class="text-[#4535FD]">Access Gateway</span> For <br>Your Everyday Needs</h1>
+                        <p class="mb-8 leading-relaxed text-white" data-aos="fade-right" data-aos-delay="600">
+                          At "Your Site", you can easily recharge airtime, top up data and <br> pay utilities bills effortlessly. Trust the process, you’ve come to <br> the right place. 
+                        </p>
+                        <div class="flex lg:flex-row md:flex-col">
+                          <a href="#" title="" class="whitespace-nowrap rounded-md bg-[#4535FD] px-5 py-3 font-medium text-white transition-all duration-200 focus:outline-none focus:ring-2 focus:ring-blue-700 focus:ring-offset-2">Get Started</a>
+                        </div>
+                    </div>
+                    <div class="lg:max-w-lg lg:w-full md:w-1/2 w-5/6">
+                        <img class="object-cover object-center rounded" alt="hero" src="/images/heroImg.png">
+                    </div>
+                </div>
+            </section>
+    </div>
+
+        <!-------------PARTNERS------------>
+    <section id="partner">
+      <div class="flex flex-col text-center w-full mb-20">
+        <h2 class="sm:text-3xl text-2xl font-extrabold title-font mb-4 text-[#FF3D00] mt-12" 
+        data-aos="fade-down" data-aos-delay="400">Our Partners</h2>
+      </div>  
+        <div class="slider">
+          <div class="slider-track">
+            <div class="slide">
+              <img src="images/mtn.png">
+            </div>
+            <div class="slide">
+              <img src="images/glo.png">
+            </div>
+            <div class="slide">
+              <img src="images/airtel.png">
+            </div>
+            <div class="slide">
+              <img src="images/9mobile.png">
+            </div>
+            <div class="slide">
+              <img src="images/spect.png">
+            </div>
+            <div class="slide">
+              <img src="images/swift.png">
+            </div>
+            <div class="slide">
+              <img src="images/cool.png">
+            </div>
+            <div class="slide">
+              <img src="images/ipnx.png">
+            </div>
+            <div class="slide">
+              <img src="images/dstv.png">
+            </div>
+            <div class="slide">
+              <img src="images/gotv.png">
+            </div>
+            <div class="slide">
+              <img src="images/startime.png">
+            </div>
+            <div class="slide">
+              <img src="images/aedc.png">
+            </div>
+
+            <!-- repeat -->
+            <div class="slide">
+              <img src="images/mtn.png">
+            </div>
+            <div class="slide">
+              <img src="images/glo.png">
+            </div>
+            <div class="slide">
+              <img src="images/airtel.png">
+            </div>
+            <div class="slide">
+              <img src="images/9mobile.png">
+            </div>
+            <div class="slide">
+              <img src="images/spect.png">
+            </div>
+            <div class="slide">
+              <img src="images/swift.png">
+            </div>
+            <div class="slide">
+              <img src="images/cool.png">
+            </div>
+            <div class="slide">
+              <img src="images/ipnx.png">
+            </div>
+            <div class="slide">
+              <img src="images/dstv.png">
+            </div>
+            <div class="slide">
+              <img src="images/gotv.png">
+            </div>
+            <div class="slide">
+              <img src="images/startime.png">
+            </div>
+            <div class="slide">
+              <img src="images/aedc.png">
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+
+    <!--------OUR-SERVICES---------->
+    <section id="services">
+      <div class="flex flex-col text-center w-full mt-12" data-aos="fade-down" data-aos-delay="150">
+        <h2 class="sm:text-3xl text-2xl font-extrabold title-font mb-4 text-[#FF3D00] mt-12" data-aos="fade-down"
+          data-aos-delay="400">Our Services</h2>
+      </div>
+      <div class="flex items-center justify-center">
+        <div class="grid gap-8 my-8 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-3">
+          <!-- cards -->
+          <div class="w-full max-w-xs text-center" data-aos="fade-up" data-aos-duration="3000">
+            <a href="/">
+              <div class="object-cover object-center w-full h-64 mx-auto rounded-lg bg-[#FF3D00] dark:border-gray-600">
+                <div class="py-6 px-4">
+                  <i class="fa-solid fa-mobile-screen-button"></i>
+                  <h5 class="text-lg font-bold text-white py-4">Recharge Airtime</h5>
+                  <span class="mt-1 text-base dark:text-gray-400">We help your communication go smoothly with our instant recharge airtime. Enter your number, recharge and start calling. Enjoy-On-The-Go</span> <br>
+                  <i class="fa-solid fa-circle-arrow-right"></i>
+                </div>
+              </div>
+            </a>
+          </div>
+    
+          <div class="w-full max-w-xs text-center" data-aos="fade-up" data-aos-duration="3000">
+            <a href="/">
+              <div class="object-cover object-center w-full h-64 mx-auto rounded-lg border-2 border-[#5c5c5c] ">
+                <div class="py-6 px-4">
+                  <i class="fa-solid fa-mobile-screen-button"></i>
+                  <h5 class="text-lg font-bold text-[#5c5c5c] py-4">Top Up Data</h5>
+                  <span class="mt-1 text-base text-[#5c5c5c]">We offer a juicy range of solutions to cater for your communication. With our data services, you get to enjoy uninterrupted connectivity, reliable performance, and flexible options.
+                  </span> <br>
+                  <i class="fa-solid fa-circle-arrow-right"></i>
+                </div>
+              </div>
+            </a>
+          </div>
+    
+          <div class="w-full max-w-xs text-center" data-aos="fade-up" data-aos-duration="3000">
+            <a href="/">
+              <div class="object-cover object-center w-full h-64 mx-auto rounded-lg border-2 border-[#5c5c5c] ">
+                <div class="py-6 px-4">
+                  <i class="fa-solid fa-file-invoice-dollar"></i>                  
+                  <h5 class="text-lg font-bold text-[#5c5c5c] py-4">Pay Utility Bills </h5>
+                  <span class="mt-1 text-base text-[#5c5c5c]">Conveniently pay your bills to manage your expenses easily. With just a few clicks, you get to pay for your internet, electricity, cable TV payments and other utility bills. 
+                  </span> <br>
+                  <i class="fa-solid fa-circle-arrow-right"></i>
+                </div>
+              </div>
+            </a>
+          </div>
+    
+          <div class="w-full max-w-xs text-center" data-aos="fade-up" data-aos-duration="3000">
+            <a href="/">
+              <div class="object-cover object-center w-full h-64 mx-auto rounded-lg border-2 border-[#5c5c5c] ">
+                <div class="py-6 px-4">
+                  <i class="fa-solid fa-book-open"></i>                  
+                  <h5 class="text-lg font-bold text-[#5c5c5c] py-4">Educational Payment</h5>
+                  <span class="mt-1 text-base text-[#5c5c5c]">We are committed to empower students, educators and lifelong learners with our educational tool services. Say goodbye to manual processes and embrace digital ease for your education. 
+                  </span> <br>
+                  <i class="fa-solid fa-circle-arrow-right"></i>
+                </div>
+              </div>
+            </a>
+          </div>
+    
+          <div class="w-full max-w-xs text-center" data-aos="fade-up" data-aos-duration="3000">
+            <a href="/">
+              <div class="object-cover object-center w-full h-64 mx-auto rounded-lg border-2 border-[#5c5c5c] ">
+                <div class="py-6 px-4">
+                  <i class="fa-solid fa-wallet"></i>                  
+                  <h5 class="text-lg font-bold text-[#5c5c5c] py-4">Airtime To Cash </h5>
+                  <span class="mt-1 text-base text-[#5c5c5c]">Make extra cash! Convert your unused airtime to cash with our airtime to cash service. Say goodbye to wasted airtime and welcome instant cash in your wallet or bank account. Enjoy on-the-go  
+                  </span> <br>
+                  <i class="fa-solid fa-circle-arrow-right"></i>
+                </div>
+              </div>
+            </a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+     <!-----------HOW-IT-WORKS--------->
+     <section class="text-gray-600 body-font">
+      <div class="container mx-auto flex px-5 py-24 md:flex-row flex-col items-center">
+        <div
+          class="lg:flex-grow md:w-1/2 lg:pl-24 md:pl-16 flex flex-col md:items-start md:text-left items-center text-center">
+          <h2 class="title-font sm:text-4xl text-3xl mb-4 font-bold text-[#FF3D00]">How It Works</h2>
+          <p class="mb-8 leading-relaxed rounded-md p-3 py-8 text-white bg-[#FF3D00]">
+            <strong>Register</strong> <br>Click on the Sign up button to get started easily, fill in your correct details. Welcome message awaits you. Thanks for choosing us!
+          </p>
+          <p class="mb-8 leading-relaxed rounded-md p-3 py-8 text-white bg-[#FF3D00]">
+            <strong>Fund your E-wallet</strong><br> After you have registered and activated your account, fund your wallet to start enjoying successful transactions.
+          </p>
+          <p class="mb-8 leading-relaxed rounded-md p-3 py-8 text-white bg-[#FF3D00]">
+            <strong>Start successful transactions</strong><br> Yes! You are good to start enjoying our unlimited and affordable services. Just Dey Enjoy. 
+          </p>
+        </div>
+
+         <div
+          class="lg:flex-grow md:w-1/2 lg:pl-24 md:pl-16 flex flex-col md:items-start md:text-left items-center text-center">
+          <p class="mb-8 leading-relaxed rounded-md text-center py-4 px-4 text-[#464646] bg-[#FFF] text-2xl font-bold">
+            How To Recharge, Pay Bills And Subscribe Data <br> &#8681;
+          </p>
+          <p class="mb-8 leading-8 rounded-md p-4 text-white bg-[#4535FD]">
+            &#8901; Login to your Dashboard <br>
+            &#8901; Select the service you want to use. <br>
+            &#8901; Enter your information. <br>
+            &#8901; Enter the amount you want to pay or the amount of airtime or data you want to subscribe to. <br>
+            &#8901; Click "Pay" or "Recharge". <br>
+            &#8901; Viola! Congratulations…Transaction successful 
+          </p>
+        </div>
+      </div>
+    </section>
+
+     <!-------ABOUT-US--------->
+     <section class="text-gray-600 body-font">
+      <div class="container mx-auto flex px-5 py-24 md:flex-row flex-col items-center">
+        <div class="lg:flex-grow md:w-1/2 lg:pl-24 md:pl-16 flex flex-col md:items-start md:text-left items-center text-center" data-aos="fade-right" data-aos-delay="500">
+          <h3 class="mb-8 leading-relaxed text-[#000] text-2xl font-bold">At "Your Site" We strive to keep up to provide the needs and wants for customers like you. </h3>
+
+          <p class="mb-8 leading-relaxed rounded-md text-[#282828]  p-3">
+            <span class="text-[#FF3D00]">&#8901; Quick and secure transactions:</span><br> Your trust means alot to us, the reason why you can make payment confidently, knowing fully that your transactions and personal information are protected. 
+            instantly.
+          </p>
+
+          <p class="mb-8 leading-relaxed rounded-md text-[#282828]  p-3">
+            <span class="text-[#FF3D00]">&#8901; Instant Top-ups:</span><br> Are you always running low on data or airtime? No problem! With our lighting-fast top-up service, you can recharge instantly without delay. Enjoy
+          </p>
+
+          <p class="mb-8 leading-relaxed rounded-md text-[#282828]  p-3">
+            <span class="text-[#FF3D00]">&#8901; One-stop Bills payment</span> <br> Say goodbye to juggling multiple due dates. Click Top up allows you to settle all your utilities to internet services, conveniently in one place.
+          </p>
+          <p class="mb-8 leading-relaxed rounded-md text-[#282828]  p-3">
+            <span class="text-[#FF3D00]">&#8901; 24/7 Availability</span> <br> Need to make payment or encounter technical problems at midnight? Our platform and Customer Care Support are available 24/7, so you can manage your transactions whenever and wherever. 
+          </p>
+          <p class="mb-8 leading-relaxed rounded-md text-[#282828]  p-3">
+            <span class="text-[#FF3D00]">&#8901; User-Friendly Interface</span><br>  Click Top up ensures a very friendly interface to access at your convenient time with no extra help. Just Dey Enjoy! 
+          </p>
+        </div>
+        
+        <div class="lg:max-w-lg lg:w-full md:w-1/2 w-5/6 mb-10 md:mb-0" data-aos="fade-left" data-aos-delay="500">
+          <p class="mb-8 leading-relaxed rounded-md text-center py-4 px-4 text-[#5c5c5c] bg-[#FFF] text-2xl font-bold">
+            ABOUT US <br> <span class="inline-block h-1 w-10 rounded bg-[#FF3D00] mt-4 mb-2"></span> <br>
+            <small class="text-base font-medium">At "Your Site", We are a secure and 247 platform that makes it easy for you to recharge airtime, top up data, and pay bills. We accept credit cards, debit cards, and PayPal.</small>
+          </p>
+          <p class="mb-8 leading-relaxed rounded-md text-center py-4 px-4 text-[#5c5c5c] bg-[#FFF] text-2xl font-bold">
+            OUR MISSION<br> <span class="inline-block h-1 w-10 rounded bg-[#FF3D00] mt-4 mb-2"></span> <br>
+            <small class="text-base font-medium">Our mission is to make it easy for our customers like you to pay your bills and stay connected. We believe that everyone should have access to affordable and reliable telecommunications services. We are committed to providing our customers with the best possible experience.</small>
+          </p>
+        </div>
+      </div>
+    </section>
+
+     <!--TESTIMONIALS---------->
+     <section class="text-gray-600 body-font">
+      <div class="flex flex-col text-center w-full">
+        <h2 class="sm:text-3xl text-2xl font-extrabold text-[#FF3D00]">What Our Customers Say</h2>
+        <i class="fa-solid fa-quote-right"></i>
+      </div>
+      <div class="container px-5 py-24 mx-auto">
+        <div class="flex flex-wrap -m-4">
+          <div class="lg:w-1/3 lg:mb-0 mb-6 p-4" data-aos="flip-left" data-aos-delay="300">
+            <div class="h-full text-center">
+              <img alt="testimonial" class="w-20 h-20 mb-8 object-cover object-center rounded-full inline-block border-2 border-gray-200 bg-gray-100" src="images/Ellipse 3.svg">
+              <p class="leading-relaxed">Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorum, at excepturi ipsa, placeat nobis nam harum sint dolores neque laudantium, sapiente commodi! Praesentium minus quos adipisci et dicta nam consequuntur.</p>
+              <span class="inline-block h-1 w-10 rounded bg-[#FF3D00] mt-6 mb-4"></span>
+              <h2 class="text-gray-900 font-medium title-font tracking-wider text-sm">ANTHONY</h2>
+              <p class="text-gray-500">Senior Product Designer</p>
+            </div>
+          </div>
+          <div class="lg:w-1/3 lg:mb-0 mb-6 p-4" data-aos="flip-left" data-aos-delay="400">
+            <div class="h-full text-center">
+              <img alt="testimonial" class="w-20 h-20 mb-8 object-cover object-center rounded-full inline-block border-2 border-gray-200 bg-gray-100" src="/images/Ellipse1.svg">
+              <p class="leading-relaxed">Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorum, at excepturi ipsa, placeat nobis nam harum sint dolores neque laudantium, sapiente commodi! Praesentium minus quos adipisci et dicta nam consequuntur.</p>
+              <span class="inline-block h-1 w-10 rounded bg-[#FF3D00] mt-6 mb-4"></span>
+              <h2 class="text-gray-900 font-medium title-font tracking-wider text-sm">FAITH</h2>
+              <p class="text-gray-500">UI Develeoper</p>
+            </div>
+          </div>
+          <div class="lg:w-1/3 lg:mb-0 p-4" data-aos="flip-left" data-aos-delay="500">
+            <div class="h-full text-center">
+              <img alt="testimonial" class="w-20 h-20 mb-8 object-cover object-center rounded-full inline-block border-2 border-gray-200 bg-gray-100" src="/images/Ellipse 2.svg">
+              <p class="leading-relaxed">Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorum, at excepturi ipsa, placeat nobis nam harum sint dolores neque laudantium, sapiente commodi! Praesentium minus quos adipisci et dicta nam consequuntur.</p>
+              <span class="inline-block h-1 w-10 rounded bg-[#FF3D00] mt-6 mb-4"></span>
+              <h2 class="text-gray-900 font-medium title-font tracking-wider text-sm">NANYE</h2>
+              <p class="text-gray-500">CTO</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!--FAQs---------->
+    <section class="text-gray-600 body-font mb-24">
+      <div class="flex flex-col text-center w-full">
+        <h2 class="sm:text-3xl text-2xl font-extrabold text-[#FF3D00]">Frequently Asked Questions</h2>
+      </div>
+      <div class="space-y-2 m-6">
+        <details class="group [&_summary::-webkit-details-marker]:hidden" open data-aos="fade-up" data-aos-delay="300">
+          <summary
+            class="flex cursor-pointer items-center justify-between gap-1 rounded-lg bg-gray-300 p-4 text-gray-900">
+            <h2 class="font-medium">Which button between SIGN UP and LOGIN will I click to get started?</h2>
+            <svg
+              class="size-5 shrink-0 transition duration-300 group-open:-rotate-180"
+              xmlns="http://www.w3.org/2000/svg"
+              fill="none"
+              viewBox="0 0 24 24"
+              stroke="currentColor">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7" />
+            </svg>
+          </summary>
+      
+          <p class="mt-4 px-4 leading-relaxed text-gray-700">
+            Kindly click on Sign up to GET STARTED and login button to access your dashboard after activating your account.
+          </p>
+        </details>
+      
+        <details class="group [&_summary::-webkit-details-marker]:hidden" data-aos="fade-up" data-aos-delay="500">
+          <summary
+            class="flex cursor-pointer items-center justify-between gap-1.5 rounded-lg bg-gray-50 p-4 text-gray-900"
+          >
+            <h2 class="font-medium">How do I know if my account is activated and I can make a purchase?</h2>
+      
+            <svg
+              class="size-5 shrink-0 transition duration-300 group-open:-rotate-180"
+              xmlns="http://www.w3.org/2000/svg"
+              fill="none"
+              viewBox="0 0 24 24"
+              stroke="currentColor"
+            >
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7" />
+            </svg>
+          </summary>
+      
+          <p class="mt-4 px-4 leading-relaxed text-gray-700">
+            Once you can access your dashboard, you have successfully registered. (Welcome On Board)
+          </p>
+        </details>
+
+        <details class="group [&_summary::-webkit-details-marker]:hidden" data-aos="fade-up" data-aos-delay="700">
+          <summary
+            class="flex cursor-pointer items-center justify-between gap-1.5 rounded-lg bg-gray-50 p-4 text-gray-900"
+          >
+            <h2 class="font-medium">What if I encounter an issue while registering, how do I get it sorted out? </h2>
+      
+            <svg
+              class="size-5 shrink-0 transition duration-300 group-open:-rotate-180"
+              xmlns="http://www.w3.org/2000/svg"
+              fill="none"
+              viewBox="0 0 24 24"
+              stroke="currentColor"
+            >
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7" />
+            </svg>
+          </summary>
+      
+          <p class="mt-4 px-4 leading-relaxed text-gray-700">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Quod recusandae molestias minima, quidem temporibus dolores sequi sapiente esse voluptatem ut suscipit, sint incidunt sit voluptas nam! Aspernatur aliquid quibusdam commodi!
+          </p>
+        </details>
+
+        <details class="group [&_summary::-webkit-details-marker]:hidden" data-aos="fade-up" data-aos-delay="900">
+          <summary
+            class="flex cursor-pointer items-center justify-between gap-1.5 rounded-lg bg-gray-50 p-4 text-gray-900"
+          >
+            <h2 class="font-medium">How secure is my transaction history and can I access them anytime?</h2>
+      
+            <svg
+              class="size-5 shrink-0 transition duration-300 group-open:-rotate-180"
+              xmlns="http://www.w3.org/2000/svg"
+              fill="none"
+              viewBox="0 0 24 24"
+              stroke="currentColor"
+            >
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7" />
+            </svg>
+          </summary>
+      
+          <p class="mt-4 px-4 leading-relaxed text-gray-700">
+            Absolutely 100 percent secure! You can access your transaction history anytime, anyday. 
+          </p>
+        </details>
+
+        <details class="group [&_summary::-webkit-details-marker]:hidden" data-aos="fade-up" data-aos-delay="1100">
+          <summary
+            class="flex cursor-pointer items-center justify-between gap-1.5 rounded-lg bg-gray-50 p-4 text-gray-900"
+          >
+            <h2 class="font-medium">How do I buy airtime, data or pay my bills?</h2>
+      
+            <svg
+              class="size-5 shrink-0 transition duration-300 group-open:-rotate-180"
+              xmlns="http://www.w3.org/2000/svg"
+              fill="none"
+              viewBox="0 0 24 24"
+              stroke="currentColor"
+            >
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7" />
+            </svg>
+          </summary>
+      
+          <p class="mt-4 px-4 leading-relaxed text-gray-700">Our Customer Care Support Team is 24/7 available to attend to you, kindly contact us.
+          </p>
+        </details>
+
+        <details class="group [&_summary::-webkit-details-marker]:hidden" data-aos="fade-up" data-aos-delay="1300">
+          <summary
+            class="flex cursor-pointer items-center justify-between gap-1.5 rounded-lg bg-gray-50 p-4 text-gray-900"
+          >
+            <h2 class="font-medium">How will I check if the transaction is successful?</h2>
+      
+            <svg
+              class="size-5 shrink-0 transition duration-300 group-open:-rotate-180"
+              xmlns="http://www.w3.org/2000/svg"
+              fill="none"
+              viewBox="0 0 24 24"
+              stroke="currentColor"
+            >
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7" />
+            </svg>
+          </summary>
+      
+          <p class="mt-4 px-4 leading-relaxed text-gray-700">Our Customer Care Support Team is 24/7 available to attend to you, kindly contact us.
+          </p>
+        </details>
+
+        <details class="group [&_summary::-webkit-details-marker]:hidden" data-aos="fade-up" data-aos-delay="1500">
+          <summary
+            class="flex cursor-pointer items-center justify-between gap-1.5 rounded-lg bg-gray-50 p-4 text-gray-900"
+          >
+            <h2 class="font-medium">If the transaction fails, what will I do? </h2>
+      
+            <svg
+              class="size-5 shrink-0 transition duration-300 group-open:-rotate-180"
+              xmlns="http://www.w3.org/2000/svg"
+              fill="none"
+              viewBox="0 0 24 24"
+              stroke="currentColor"
+            >
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7" />
+            </svg>
+          </summary>
+      
+          <p class="mt-4 px-4 leading-relaxed text-gray-700">Our Customer Care Support Team is 24/7 available to attend to you, kindly contact us.
+          </p>
+        </details>
+
+        <details class="group [&_summary::-webkit-details-marker]:hidden" data-aos="fade-up" data-aos-delay="1700">
+          <summary
+            class="flex cursor-pointer items-center justify-between gap-1.5 rounded-lg bg-gray-50 p-4 text-gray-900"
+          >
+            <h2 class="font-medium">After registration, what will I do next?  </h2>
+      
+            <svg
+              class="size-5 shrink-0 transition duration-300 group-open:-rotate-180"
+              xmlns="http://www.w3.org/2000/svg"
+              fill="none"
+              viewBox="0 0 24 24"
+              stroke="currentColor"
+            >
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7" />
+            </svg>
+          </summary>
+      
+          <p class="mt-4 px-4 leading-relaxed text-gray-700">Our Customer Care Support Team is 24/7 available to attend to you, kindly contact us.
+          </p>
+        </details>
+
+        <details class="group [&_summary::-webkit-details-marker]:hidden" data-aos="fade-up" data-aos-delay="1900">
+          <summary
+            class="flex cursor-pointer items-center justify-between gap-1.5 rounded-lg bg-gray-50 p-4 text-gray-900"
+          >
+            <h2 class="font-medium">What are important things during registration?  </h2>
+      
+            <svg
+              class="size-5 shrink-0 transition duration-300 group-open:-rotate-180"
+              xmlns="http://www.w3.org/2000/svg"
+              fill="none"
+              viewBox="0 0 24 24"
+              stroke="currentColor"
+            >
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7" />
+            </svg>
+          </summary>
+      
+          <p class="mt-4 px-4 leading-relaxed text-gray-700">Our Customer Care Support Team is 24/7 available to attend to you, kindly contact us.
+          </p>
+        </details>
+      </div>
+    </section>
+
+     <!--------PRICING-SECTION---------->
+     <section class="text-gray-600 body-font">
+      <div class="flex flex-col text-center w-full">
+        <h2 class="sm:text-3xl text-2xl font-extrabold text-[#FF3D00]">Affordable Pricing Plans</h2>
+      </div>
+      <div class="flex flex-wrap">
+        <div class="p-4 xl:w-1/4 md:w-1/2 w-full">
+          <div class="h-full p-6 rounded-lg border-2 border-gray-300 flex flex-col items-center justify-center overflow-hidden">
+            <img src="/images/airtel.png" alt="">
+            <p class="flex items-center text-gray-600 mb-2">
+              100.0MB &#8210; ₦27 &#8210; 7 days(weekly)
+            </p>
+            <p class="flex items-center text-gray-600 mb-2">
+              300.0MB &#8210; ₦65 &#8210; 7 days(weekly)
+            </p>
+            <p class="flex items-center text-gray-600 mb-2">
+              500.0MB &#8210; ₦110 &#8210; 7 days(weekly)
+            </p>
+            <p class="flex items-center text-gray-600 mb-2">
+              1GB &#8210; ₦220 &#8210; 7 days(weekly)
+            </p>
+            <p class="flex items-center text-gray-600 mb-2">
+              1.2GB &#8210; ₦440 &#8210; 7 days(weekly)
+            </p>
+            <p class="flex items-center text-gray-600 mb-2">
+              1.5GB &#8210; ₦900 &#8210; 7 days(weekly)
+            </p>
+            <p class="flex items-center text-gray-600 mb-2">
+              3BG &#8210; ₦1080 &#8210; 7 days(weekly)
+            </p>
+            <p class="flex items-center text-gray-600 mb-2">
+              4.5GB &#8210; ₦1100 &#8210; 7 days(weekly)
+            </p>
+            <p class="flex items-center text-gray-600 mb-2">
+              5GB &#8210; ₦1800 &#8210; 7 days(weekly)
+            </p>
+            <button class="flex items-center mt-auto text-white justify-center bg-gray-400 border-0 py-2 px-4 w-full focus:outline-none hover:bg-red-500 rounded">Airtel Data
+            </button>
+          </div>
+        </div>
+        <div class="p-4 xl:w-1/4 md:w-1/2 w-full">
+          <div class="h-full p-6 rounded-lg  flex flex-col items-center justify-center overflow-hidden bg-[#FF3D00]">
+            <img src="/images/glo.png" alt="">
+            <p class="flex items-center text-white mb-2">
+              100.0MB &#8210; ₦27 &#8210; 7 days(weekly)
+            </p>
+            <p class="flex items-center text-white mb-2">
+              300.0MB &#8210; ₦65 &#8210; 7 days(weekly)
+            </p>
+            <p class="flex items-center text-white mb-2">
+              500.0MB &#8210; ₦110 &#8210; 7 days(weekly)
+            </p>
+            <p class="flex items-center text-white mb-2">
+              1GB &#8210; ₦220 &#8210; 7 days(weekly)
+            </p>
+            <p class="flex items-center text-white mb-2">
+              1.2GB &#8210; ₦440 &#8210; 7 days(weekly)
+            </p>
+            <p class="flex items-center text-white mb-2">
+              1.5GB &#8210; ₦900 &#8210; 7 days(weekly)
+            </p>
+            <p class="flex items-center text-white mb-2">
+              3BG &#8210; ₦1080 &#8210; 7 days(weekly)
+            </p>
+            <p class="flex items-center text-white mb-2">
+              4.5GB &#8210; ₦1100 &#8210; 7 days(weekly)
+            </p>
+            <p class="flex items-center text-white mb-2">
+              5GB &#8210; ₦1800 &#8210; 7 days(weekly)
+            </p>
+            <button class="flex items-center mt-auto text-white justify-center bg-gray-400 border-0 py-2 px-4 w-full focus:outline-none hover:bg-green-500 rounded">Glo Data
+            </button>
+          </div>
+        </div>
+        <div class="p-4 xl:w-1/4 md:w-1/2 w-full">
+          <div class="h-full p-6 rounded-lg border-2 border-gray-300 flex flex-col   items-center justify-center overflow-hidden">
+            <img src="/images/mtn.png" alt="">
+            <p class="flex items-center text-gray-600 mb-2">
+              100.0MB &#8210; ₦27 &#8210; 7 days(weekly)
+            </p>
+            <p class="flex items-center text-gray-600 mb-2">
+              300.0MB &#8210; ₦65 &#8210; 7 days(weekly)
+            </p>
+            <p class="flex items-center text-gray-600 mb-2">
+              500.0MB &#8210; ₦110 &#8210; 7 days(weekly)
+            </p>
+            <p class="flex items-center text-gray-600 mb-2">
+              1GB &#8210; ₦220 &#8210; 7 days(weekly)
+            </p>
+            <p class="flex items-center text-gray-600 mb-2">
+              1.2GB &#8210; ₦440 &#8210; 7 days(weekly)
+            </p>
+            <p class="flex items-center text-gray-600 mb-2">
+              1.5GB &#8210; ₦900 &#8210; 7 days(weekly)
+            </p>
+            <p class="flex items-center text-gray-600 mb-2">
+              3BG &#8210; ₦1080 &#8210; 7 days(weekly)
+            </p>
+            <p class="flex items-center text-gray-600 mb-2">
+              4.5GB &#8210; ₦1100 &#8210; 7 days(weekly)
+            </p>
+            <p class="flex items-center text-gray-600 mb-2">
+              5GB &#8210; ₦1800 &#8210; 7 days(weekly)
+            </p>
+            <button class="flex items-center mt-auto text-white justify-center bg-gray-400 border-0 py-2 px-4 w-full focus:outline-none hover:bg-yellow-500 rounded">Mtn Data
+            </button>
+          </div>
+        </div>
+        <div class="p-4 xl:w-1/4 md:w-1/2 w-full">
+          <div class="h-full p-6 rounded-lg border-2 border-gray-300 flex flex-col   items-center justify-center overflow-hidden">
+            <img src="/images/9mobile.png" alt="">
+            <p class="flex items-center text-gray-600 mb-2">
+              100.0MB &#8210; ₦27 &#8210; 7 days(weekly)
+            </p>
+            <p class="flex items-center text-gray-600 mb-2">
+              300.0MB &#8210; ₦65 &#8210; 7 days(weekly)
+            </p>
+            <p class="flex items-center text-gray-600 mb-2">
+              500.0MB &#8210; ₦110 &#8210; 7 days(weekly)
+            </p>
+            <p class="flex items-center text-gray-600 mb-2">
+              1GB &#8210; ₦220 &#8210; 7 days(weekly)
+            </p>
+            <p class="flex items-center text-gray-600 mb-2">
+              1.2GB &#8210; ₦440 &#8210; 7 days(weekly)
+            </p>
+            <p class="flex items-center text-gray-600 mb-2">
+              1.5GB &#8210; ₦900 &#8210; 7 days(weekly)
+            </p>
+            <p class="flex items-center text-gray-600 mb-2">
+              3BG &#8210; ₦1080 &#8210; 7 days(weekly)
+            </p>
+            <p class="flex items-center text-gray-600 mb-2">
+              4.5GB &#8210; ₦1100 &#8210; 7 days(weekly)
+            </p>
+            <p class="flex items-center text-gray-600 mb-2">
+              5GB &#8210; ₦1800 &#8210; 7 days(weekly)
+            </p>
+            <button class="flex items-center mt-auto text-white justify-center bg-gray-400 border-0 py-2 px-4 w-full focus:outline-none hover:bg-green-900 rounded">9mobile Data
+            </button>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-------CONTACT-PAGE-------->
+    <section class="text-gray-600 body-font relative">
+      <div class="container px-5 py-24 mx-auto"> 
+      <div class="flex flex-col text-center w-full" data-aos="fade-down" data-aos-delay="1000">
+        <h2 class="sm:text-3xl text-2xl font-extrabold text-[#FF3D00]">Get in Touch</h2>
+      </div>
+        <form action="https://fabform.io/f/{form-id}" method="post">
+        <div class="lg:w-1/2 md:w-2/3 mx-auto">
+          <div class="flex flex-wrap -m-2">
+            <div class="p-2 w-1/2">
+              <div class="relative">
+                <label for="name" class="leading-7 text-sm text-gray-600">Name</label>
+                <input type="text" id="name" name="name" class="w-full bg-gray-100 bg-opacity-50 rounded border border-gray-300 focus:border-indigo-500 focus:bg-white focus:ring-2 focus:ring-indigo-200 text-base outline-none text-gray-700 py-1 px-3 leading-8 transition-colors duration-200 ease-in-out">
+              </div>
+            </div>
+            <div class="p-2 w-1/2">
+              <div class="relative">
+                <label for="email" class="leading-7 text-sm text-gray-600">Email</label>
+                <input type="email" id="email" name="email" class="w-full bg-gray-100 bg-opacity-50 rounded border border-gray-300 focus:border-indigo-500 focus:bg-white focus:ring-2 focus:ring-indigo-200 text-base outline-none text-gray-700 py-1 px-3 leading-8 transition-colors duration-200 ease-in-out">
+              </div>
+            </div>
+            <div class="p-2 w-full">
+              <div class="relative">
+                <label for="message" class="leading-7 text-sm text-gray-600">Message</label>
+                <textarea id="message" name="message" class="w-full bg-gray-100 bg-opacity-50 rounded border border-gray-300 focus:border-indigo-500 focus:bg-white focus:ring-2 focus:ring-indigo-200 h-32 text-base outline-none text-gray-700 py-1 px-3 resize-none leading-6 transition-colors duration-200 ease-in-out"></textarea>
+              </div>
+            </div>
+            <div class="p-2 w-full">
+              <button class="flex mx-auto text-white bg-[#FF3D00] border-0 py-2 px-8 focus:outline-none hover:bg-indigo-600 rounded text-lg">Send Message </button>
+            </div>
+          </div>
+        </div>
+      </div>
+      </form>
+    </section>
+
+  <!--------FOOTER-------->
+  <footer class="bg-[#FF3D00]">
+    <div class="">
+      <div class="max-w-screen-lg px-4 sm:px-6 text-gray-800 sm:grid md:grid-cols-4 sm:grid-cols-2 mx-auto">
+        <div class="p-5">
+          <h3 class="font-bold text-xl text-white">📜"Your Site"</h3>
+        </div>
+        <div class="p-5 text-white">
+          <div class="text-sm uppercase font-bold">Resources</div>
+          <a class="my-3 block" href="/#">About Us <span class="text-xs p-1"></span></a><a class="my-3 block" href="/#">Products <span class="text-xs p-1"></span></a>
+            <a class="my-3 block" href="/#">Testimonials <span class="text-xs p-1"></span></a>
+        </div>
+        <div class="p-5 text-white">
+          <div class="text-sm uppercase font-bold">Support</div>
+          <a class="my-3 block" href="/#">Help Center <span class="text-xs p-1"></span></a><a class="my-3 block"
+            href="/#">Privacy Policy <span class="text-xs p-1"></span></a><a class="my-3 block" href="/#">Conditions <span
+              class="text-xs p-1"></span></a>
+        </div>
+        <div class="p-5 text-white">
+          <div class="text-sm uppercase font-bold">Contact us</div>
+          <a class="my-3 block" href="/#">XXX XXXX, Lagos, Nigeria
+            <span class="text-xs p-1"></span></a>
+  
+          <a class="my-3 block" href="/#">contact@company.com
+            <span class=" text-xs p-1"></span></a>
+        </div>
+      </div>
+    </div>
+  
+    <div class="pt-2">
+      <div class="flex pb-5 px-3 m-auto pt-5 text-gray-900 text-sm flex-col
+            max-w-screen-lg items-center">
+        <div class="my-5">© Copyright 2020. All Rights Reserved.</div>
+      </div>
+    </div>
+  </footer>
+  
+
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+        AOS.init();
+      </script>
+</body>
+</html>

@@ -1,0 +1,62 @@
+@import url('https://fonts.googleapis.com/css2?family=Barlow:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+::-webkit-scrollbar {
+    width: 15px;
+  }
+  
+  ::-webkit-scrollbar-track {
+    background-color: #FFF;
+  }
+  
+  ::-webkit-scrollbar-thumb {
+    background-color: #bdc2d4;
+    border-radius: 5px;
+  }
+body {
+    font-family: "Barlow", serif;
+    scroll-behavior: smooth;
+    background: #FFF7F4;
+}
+
+
+
+.slider {
+    height: 100px;
+    overflow: hidden;
+    margin: 2rem 4rem;
+    position: relative;
+    width: auto;
+  }
+  
+  .slider .slider-track {
+    animation: scroll 30s linear infinite;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: fit-content;
+  }
+  
+  .slider .slide {
+    height: 100px;
+    width: 100px;
+  }
+  
+  .slider .slider-track:hover {
+    animation-play-state: paused;
+  }
+  
+  .slide img {
+    width: 10rem;
+    height: auto;
+    margin: 1rem;
+  }
+  
+  @keyframes scroll {
+    0% {
+      transform: translateX(0);
+    }
+  
+    100% {
+      transform: translateX(-50%);
+    }
+  }
